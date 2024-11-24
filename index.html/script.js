@@ -1,15 +1,12 @@
-<script>
-        // Função para mostrar e esconder informações extras sobre você
-        function toggleInfo() {
-            var moreInfo = document.getElementById("moreInfo");
-            var button = document.getElementById("showMoreBtn");
+const link = document.getElementById("w");
+link.addEventListener("https://wa.me/5548996080617", function (event) {
+    event.preventDefault();
+alert("Você clicou no link!");
 
-            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
-                moreInfo.style.display = "block";
-                button.textContent = "Mostrar menos"; // Mudar o texto do botão
-            } else {
-                moreInfo.style.display = "none";
-                button.textContent = "Mostrar mais"; // Restaurar o texto do botão
-            }
-        }
-    </script>
+link.addEventListener("click", function (event) {
+    event.preventDefault(); 
+    link.style.color = "red"; 
+    alert("Você clicou no link!");
+});
+    console.log("O link foi clicado!");
+});
